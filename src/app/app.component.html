@@ -1,0 +1,55 @@
+<mat-sidenav-container>
+  <mat-sidenav  #sidenav role="navigation">
+   <mat-nav-list>
+    <a mat-list-item
+        routerLink="/">
+        <span class="label">Home</span>
+    </a>
+    <a mat-list-item
+      routerLink="/career">
+      <span class="label">Career</span>
+    </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="bg_white">
+      <div class="container w100">
+     <div>
+       <a routerLink="/">
+        <img class="logo"  src="./assets/images/logo-c4media.svg" fxLayoutAlign="flex-start">
+       </a>
+     </div>
+     <div class="burger">
+       <button (click)="sidenav.toggle()" fxLayoutAlign="flex-end">
+        <mat-icon><i class="fas fa-bars"></i></mat-icon>
+      </button>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" class="menu" fxShow.gt-md>
+        <ul fxLayoutGap="20px" class="navigation-items">
+            <li>
+              <a
+                routerLink="/">
+                  <span class="label">Home</span>
+              </a>
+            </li>
+            <li>
+                <a
+                  routerLink="/career">
+                    <span class="label">Career</span>
+                </a>
+            </li>
+          
+        </ul>
+     </div>
+   </div>
+    </mat-toolbar>
+
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+

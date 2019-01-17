@@ -1,0 +1,73 @@
+@import 'assets/styles/main.scss';
+
+.card {
+  width: auto;
+}
+@media(min-width: 1200x){
+	.card {
+	  max-width: 400px;
+	}
+}
+.mat-drawer-container[_ngcontent-c0]{
+	background-color: $white;
+}
+.hp{
+	height: 100%;
+	text-align: center;
+	background-color: $white;
+	@include media(sm) {
+	   height:71vh;
+	}
+	@include media(md) {
+	   	height:71vh;
+	}
+	@include media(lg) {
+		height:71vh;
+		scroll: hidden;
+	}
+}
+.hp_card{
+	padding: 0;
+  	cursor: pointer;
+  	border-radius:1;
+  	margin-bottom: 1rem;
+  	@include box-shaow;
+	.hp_card--img{
+		object-fit: cover;
+		height:150px;
+		width: auto;
+		margin-top: 0px;
+    	width: 100%;
+	}
+	.hp_card--container{
+		background:$white;
+		padding:16px;
+		max-height:50px;
+	}
+	&:hover{
+		@include mat-elevation(5);
+	}
+	a, span{
+		color: $blue-link;
+		text-transform: uppercase;
+		font-size: $xs-font;
+		white-space: nowrap;
+    	line-height: 1rem;
+    	letter-spacing: .01875rem;
+    	font-weight: 500;
+    	text-decoration: none;
+	}
+	.mat-card-image{
+		margin: 0;
+	}
+}
+.hp_title--secondary{
+	margin: 0;
+	padding: 0;
+	&:before{
+		height: 0px;
+	}
+}
+.hp_title--main{
+	margin: 1rem 0;
+}

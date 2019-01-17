@@ -1,0 +1,48 @@
+@import 'assets/styles/main.scss';
+
+.subtitle{
+   font-size:20px;
+   &:before{
+      content: "";
+      height: 0px;
+      background: none;
+   }
+}
+
+.cardList {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }
+ /* Column Gap */
+ .cardList > * {
+   box-sizing: border-box;
+   margin-right: 0px;
+ }
+ /* Item sizing */
+ .cardListItem {
+   @include box-shaow;
+   margin-bottom: 1rem;
+   text-align: left;
+   background: $white;
+   padding: 16px;
+     @include media(sm) {
+      max-width: 100%;
+     }
+     @include media(md) {
+       max-width: 100%;
+     }
+     @include media(lg) {
+        margin-bottom: 2rem;
+     }
+   .fas:before{
+      color: $brand-secondary;
+      margin-right: 10px;
+   }
+
+   p{
+    flex: 1 0 auto;
+   }
+ }
+ 

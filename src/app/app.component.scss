@@ -1,0 +1,117 @@
+@import 'assets/styles/main.scss';
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
+  background: $brand_primary;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+}
+
+.navigation-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;  
+  a{
+    color: $grey-dark;
+    line-height: 1.5rem;
+    padding:16px 0;
+    font-weight: 700;
+    font-size: 1.125rem;
+    width: auto;
+    margin-right: 32px;
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+}
+.mat-toolbar-single-row{
+  @include mat-elevation(1);
+}
+.navigation-items[_ngcontent-c0], .menu{
+ display: none;
+  @include media(sm) {
+    display: flex;
+  }
+  @include media(md) {
+    display: flex;
+  }
+  @include media(lg) {
+    display: flex;
+  }
+}
+.burger{
+ display: block;
+ position: absolute;
+ right: 15px;
+  @include media(sm) {
+    display: none;
+  }
+  @include media(md) {
+    display: none;
+  }
+  @include media(lg) {
+    display: none;
+  }
+}
+
+.mat-drawer{
+  background: $brand-primary;
+}
+.mat-list-base[_ngcontent-c0] .mat-list-item[_ngcontent-c0]{
+  color: $white;
+  font-weight: 500;
+}
+.mat-toolbar.mat-primary, .mat-drawer-container{
+  background-color: $white;
+}
+
+.logo{
+  width: 35%;
+  height: auto;
+  margin-top: 10px;
+  @include media(md) {
+   width: 45%;
+   margin-top: 0px;
+  }
+  @include media(lg) {
+    width: 44%;
+    margin-top: 0px;
+  }
+}
+.fa-bars{
+  &:before{
+    color: $brand_primary;
+    font-size:2rem;
+  }
+}
+.icon {
+  display: inline-block;
+  height: 30px;
+  margin: 0 auto;
+  padding-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 15%;
+
+}
+
+.label {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0;
+  width: 85%;
+}

@@ -1,0 +1,32 @@
+@import 'assets/styles/main.scss';
+
+.image{
+  height:35vh; 
+  background-size:cover; 
+  width:auto;
+  background-image:url('assets/images/img_header2.jpg');
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media(sm) {
+    height:50vh;
+  }
+  @include media(md) {
+    height:75vh;
+  }
+  @include media(lg) {
+    height:90vh;
+  }
+ 
+  h1{
+  	color:$white;
+  }
+}
+
+.upbut{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}

@@ -1,0 +1,75 @@
+
+// Responsive variables:
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+}
+
+
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+// Responsive font mixin
+
+$p-font-sizes: (
+  null  : 0.8rem,
+  480px : 0.9rem,
+  640px : 0.9rem,
+  1024px: 1rem
+);
+$h2-font-sizes: (
+  null  : 1rem,
+  480px : 1.1rem,
+  640px : 1.3rem,
+  1024px: 1.5rem
+);
+$h1-font-sizes: (
+  null  : 30px,
+  480px : 40px,
+  640px : 50px,
+  1024px: 80px
+);
+
+
+// Hover mixin
+
+@mixin hover {
+  @include mat-elevation-transition;
+  @include mat-elevation(2);
+  &:hover {
+    @include mat-elevation(8);
+  }
+}
+
+@mixin box-shaow {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+  &:hover {
+    @include mat-elevation(3);
+  }
+}

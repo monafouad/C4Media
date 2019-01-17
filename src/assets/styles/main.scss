@@ -1,0 +1,159 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body,html {
+  margin: 0;
+  padding:0;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 100%;
+  min-height:100%;
+}
+body{
+  background: $white;
+}
+a{
+ color: #434242;
+}
+p {
+  @include font-size($p-font-sizes);
+  line-height: 1.5rem;
+  margin-bottom: 24px;
+  color: #222;
+}
+h1 {
+  @include font-size($h1-font-sizes);
+  color: $brand_primary;
+}
+h2 {
+  @include font-size($h2-font-sizes);
+  line-height: 2.75rem;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 24px;
+  &:before {
+      content: '';
+      width: 40px;
+      height: 4px;
+      background: $brand_secondary;
+      position: absolute;
+      top: 5px;
+  }
+}
+
+
+h1, h2, h3, h4, h5{
+  word-break: break-word;
+  white-space: normal;
+  max-width: 100%;
+}
+.section {
+  padding: $container-padding;
+}
+
+
+.container {
+  padding: 10px;
+  margin:auto;
+  @include media(sm) {
+    padding:20px;
+  }
+  @include media(md) {
+    max-width: 968px;
+  }
+  @include media(lg) {
+    width: 100%;
+    max-width: 1290px;
+    padding: 0;
+  }
+}
+
+
+.hover {
+  @include mat-elevation-transition;
+  @include mat-elevation(2);
+  &:hover {
+    @include mat-elevation(8);
+  }
+}
+.bg_white{
+  background-color: $white;
+}
+.light-bg{
+  background-color: $light-bg;
+}
+
+.w100{
+  width:100%;
+}
+
+.team{
+  background: $blue;
+  padding: 36px 0 0;
+  .bottom_container{
+    min-height:500px; 
+    background-color:$blue;
+    background-image:url('/assets/images/img_team.jpg');
+    background-size:cover;
+    background-position:bottom;
+    @include media(sm) {
+      min-height:500px;
+    }
+    @include media(md) {
+      min-height:640px;
+    }
+    @include media(lg) {
+      min-height: 730px;
+    }
+  }  
+ 
+}
+
+.btn_up{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: $brand_primary;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 0px;
+  color: $white;
+  @include hover;
+  &:focus {
+    outline:0;
+  }
+  @include media(lg) {
+    bottom: 50px;
+    right: 50px;
+  }
+}
+
+
+section {
+  position: relative;
+  .scroll {
+    display: none;
+    @include media(lg) {
+      @include hover;
+      display: block;
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      z-index: 2;
+      display: inline-block;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: $white;
+      font-size: 2rem;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: opacity .3s;
+    }
+   
+  }
+}

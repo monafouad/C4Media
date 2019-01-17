@@ -1,0 +1,47 @@
+<div class="hp">
+  <h1 class="hp_title--main">C4 Media InfoQ, QCon</h1>
+  <h2 class="hp_title--secondary">Accelerating the software side of human progress.</h2>
+  <h3>We help developer teams adopt new technology and best practices.</h3>
+
+  <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap  fxLayoutGap="2%" fxLayout fxLayoutAlign="center center" >
+    <div fxFlex="25%">
+    	<mat-card class="card hp_card hover">
+        <a href="https://www.infoq.com/about-infoq" targer="_blank">
+          <img mat-card-image class="hp_card--img" src="./assets/images/infoq.jpg">
+        </a>
+        <div class="hp_card--container">
+          <span>Info Q Reader</span>
+        </div>
+      </mat-card>
+    </div>
+    <div fxFlex="25%">
+      <mat-card class="card hp_card hover">
+        <a href="https://qconlondon.com/speakers/london2019" targer="_blank">
+          <img mat-card-image  class="hp_card--img" src="./assets/images/speaker.jpg">
+        </a>
+        <div class="hp_card--container">
+          <span>QCon Attendee / Speaker</span>
+        </div>
+      </mat-card>
+    </div>
+    <div fxFlex="25%">
+    	<mat-card class="card hp_card hover">
+        <img mat-card-image id="imagespp" class="hp_card--img" crossOrigin="Anonymous" [src]="imagespp" (click)="download()">
+         <div class="hp_card--container">
+          <span>Download PDF</span>
+        </div>
+      </mat-card>
+    </div>
+    <div fxFlex="25%">
+    	 <mat-card class="card hp_card hover" routerLink="./career">
+        <img mat-card-image class="hp_card--img" src="./assets/images/img_header2.jpg">
+        <div class="hp_card--container">
+          <span>View Careers</span>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <ng-template #hello>
+</ng-template>
+ 
+</div>
