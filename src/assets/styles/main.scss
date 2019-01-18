@@ -13,17 +13,25 @@ body,html {
   width: 100%;
   min-height:100%;
 }
+html, body {
+ height: 100%;
+ margin: 0;
+}
 body{
   background: $white;
 }
 a{
- color: #434242;
+  color: inherit;
+  &:hover{
+    text-decoration: underline;
+  }
 }
+
 p {
   @include font-size($p-font-sizes);
   line-height: 1.5rem;
   margin-bottom: 24px;
-  color: #222;
+  color: $grey_dark;
 }
 h1 {
   @include font-size($h1-font-sizes);

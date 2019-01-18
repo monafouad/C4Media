@@ -4,6 +4,7 @@ $breakpoint-xs: 360px;
 $breakpoint-sm: 767px;
 $breakpoint-md: 1023px;
 $breakpoint-lg: 1360px;
+$breakpoint-lg: 1360px;
 
 @mixin media($media) {
   @if $media == xs {
@@ -53,7 +54,8 @@ $h1-font-sizes: (
   null  : 30px,
   480px : 40px,
   640px : 50px,
-  1024px: 80px
+  1024px: 60px,
+  1360px: 80px
 );
 
 

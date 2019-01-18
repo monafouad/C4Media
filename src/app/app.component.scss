@@ -10,13 +10,14 @@ mat-sidenav {
 }
 
 a {
-  text-decoration: none;
   color: $white;
+  text-decoration: none;
 }
 
 a:hover,
 a:active {
   color: lightgray;
+  text-decoration: underline;
 }
 
 .navigation-items {
@@ -40,6 +41,8 @@ a:active {
 }
 .mat-toolbar-single-row{
   @include mat-elevation(1);
+  margin-bottom: 5px;
+
 }
 .navigation-items[_ngcontent-c0], .menu{
  display: none;
@@ -82,7 +85,8 @@ a:active {
 .logo{
   width: 35%;
   height: auto;
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-left: -8px;
   @include media(md) {
    width: 45%;
    margin-top: 0px;
