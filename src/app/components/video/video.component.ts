@@ -10,16 +10,11 @@ export class VideoComponent  {
   content: string = '<strong>View us on vimeo</strong>';
     @ViewChild('myDiv') myDiv: ElementRef;
 
-
-innerHTML
+iframennerHTML
   constructor(private renderer: Renderer2) {}
 
   ngOnInit() {
     this.renderer.setAttribute(this.myDiv.nativeElement, 'innerHTML', this.content);
   }
 
-
-
-
-  
 }

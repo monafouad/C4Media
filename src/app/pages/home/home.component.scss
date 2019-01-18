@@ -29,7 +29,7 @@
 	}
 	@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
 		padding: 0px;
-	   height:calc(100vh - 203px);
+	    height:calc(100vh - 203px);
 	   .hp_title--main{
 	   	 font-size: 60px;
 	   }
@@ -76,7 +76,7 @@ main{
 		@include mat-elevation(5);
 	}
 	a, span{
-		color: $blue-link;
+		color: $blue_link;
 		text-transform: uppercase;
 		font-size: $xs-font;
 		white-space: nowrap;

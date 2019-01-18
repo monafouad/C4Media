@@ -6,6 +6,9 @@ $breakpoint-md: 1023px;
 $breakpoint-lg: 1360px;
 $breakpoint-lg: 1360px;
 
+$max-width-md: 960px;
+$max-width-lg: 1290px;
+
 @mixin media($media) {
   @if $media == xs {
     @media (max-width: $breakpoint-sm) { @content; }
