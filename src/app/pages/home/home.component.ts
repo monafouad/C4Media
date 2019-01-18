@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   	constructor() { }
 
 	ngAfterViewInit() {
-	  console.log(this.helloTemplate);
 	}
 
     imagespp: string="https://qconnewyork.com/ny2018/cdn/farfuture/nANumX198tuisqQ1_780fMwtLx3n8f23-AWO2iSmxds/mtime_1493737106/sites/default/files/styles/img-single-track/public/ray-tsang735e.jpg?itok=rtut1oaW"

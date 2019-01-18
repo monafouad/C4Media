@@ -131,6 +131,8 @@ h1, h2, h3, h4, h5{
   border: 0px;
   color: $white;
   cursor:pointer;
+  text-align: center;
+  line-height: 50px;
   @include hover;
   &:focus {
     outline:0;
@@ -141,6 +143,10 @@ h1, h2, h3, h4, h5{
   }
 }
 
+.scroll{
+  cursor: pointer;
+}
+
 
 section {
   position: relative;
@@ -148,7 +154,6 @@ section {
     display: none;
     @include media(lg) {
       @include hover;
-      display: block;
       position: absolute;
       bottom: 20%;
       left: 50%;

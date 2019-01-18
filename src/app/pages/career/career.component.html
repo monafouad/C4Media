@@ -1,17 +1,20 @@
  <div fxLayout="column" xLayout.xs="column" class="relative">
-	<section  id="section01">
+	<section #top>
 		<div class="image" id="awesomePart"><h1>{{title}}</h1></div>
+		<a (click)="scrollToElement(firstSec)" class="scroll"  ><span><i class="fas fa-chevron-down"></i></span></a>
 	</section>
-	<section  id="section02" class="section white-bg">
+	<section #firstSec class="section white-bg">
 		<app-frame></app-frame>
 	</section>
-	<section  id="section03" class="section light-bg">
+	<section class="section light-bg">
 		<app-about></app-about>
 	</section>
-	<section  id="section04" class="section team">
+	<section class="section team">
  		<app-team></app-team>
  	</section>
- 	<section  id="section05" class="section white-bg">
+ 	<section class="section white-bg">
 	 	<app-reasons ></app-reasons>
 	 </section>
+
+	<a (click)="scrollToElement(top)" class="btn_up"><i class="fas fa-chevron-up"></i></a>
 </div>
