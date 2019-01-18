@@ -17,7 +17,6 @@ import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
 import { ReasonsComponent } from './components/reasons/reasons.component';
 import { FrameComponent } from './components/frame/frame.component';
-import { ScrollUpComponent } from './components/scroll-up/scroll-up.component';
 import { SafePipe } from './components/frame/safe.pipe';
 
 import {AppRouters} from './app.routes';
@@ -34,9 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     SafePipe,
     TeamComponent,
     ReasonsComponent,
-    ScrollUpComponent,
     FooterComponent,
-
   ],
   imports: [
     BrowserModule, 

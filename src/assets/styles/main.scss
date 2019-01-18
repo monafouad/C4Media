@@ -130,6 +130,7 @@ h1, h2, h3, h4, h5{
   border-radius: 50px;
   border: 0px;
   color: $white;
+  cursor:pointer;
   @include hover;
   &:focus {
     outline:0;
@@ -163,4 +164,8 @@ section {
     }
    
   }
+}
+
+.relative{
+  position:relative;
 }

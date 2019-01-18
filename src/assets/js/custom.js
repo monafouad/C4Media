@@ -19,6 +19,7 @@ $(document).ready(function() {
     checkPosition();
 });
 
+
 $(function() {
   $('.scroll[href*=#]').on('click', function(e) {
     e.preventDefault();

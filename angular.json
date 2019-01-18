@@ -32,7 +32,9 @@
               "src/assets/styles/mixins.scss",
               "src/app/shared/footer/footer.component.scss",
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/custom.js",
+            ]
           },
           "configurations": {
             "production": {
@@ -109,7 +111,7 @@
         }
       }
     },
-    "c4media-e2e": {
+    "angular-material-tutorial-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -118,11 +120,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "c4media:serve"
+            "devServerTarget": "angular-material-tutorial:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "c4media:serve:production"
+              "devServerTarget": "angular-material-tutorial:serve:production"
             }
           }
         },
